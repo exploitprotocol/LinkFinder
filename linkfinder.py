@@ -69,7 +69,7 @@ regex = re.compile(r"""
     |
 
     ([a-zA-Z0-9_\-/]{1,}/               # Relative endpoint with /
-    [a-zA-Z0-9_\-/]{1,}\.[a-zA-Z]{1,4}  # Rest + extension
+    [a-zA-Z0-9_\-/]{1,}(\.[a-zA-Z]{1,4})?  # Rest + extension
     (?:[\?|/][^"|']{0,}|))              # ? mark with parameters
 
     |
